@@ -1,9 +1,10 @@
 # Hamburger-menu
 Hamburger menu / Only css
 
-![trick3](https://github.com/user-attachments/assets/cda7c18a-569d-4947-a118-129850b39d35)
+![hambur](https://github.com/user-attachments/assets/887f8f38-9224-4ff4-a373-307b57c7ecfe)
 
-- [Demo Project](https://code-banu.github.io/Animation/)
+
+- [Demo Project](https://code-banu.github.io/Hamburger-menu/)
 
 - Developed by Raheleh Banam
 
