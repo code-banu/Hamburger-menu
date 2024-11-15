@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgb(55, 0, 0) 60%, rgb(137, 35, 15));
+}
+.social{
+    position:fixed;
+    right: 0;
+    bottom: 2%;
+    width: 150px;
+    height: 150px;
+    z-index: 9999;
+    /* border: 1px solid red; */
+    >figure{
+        width: 90%;
+        height: 90%;
+        >img{
+            width: 100%;
+            height: 100%;
+            border-radius: 97px 159px 104px 165px;
+        }
+    }
+    >a{
+        width: 28px;
+        height: 28px;
+        margin: 8px;
+        >img{
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+   
+        
+        }
+    }
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid white; */
+    position: relative;
+    clip-path: circle(10% at 0 0);
+    background-color: #c70909;
+    transition: 1s;
+    &:hover{
+        clip-path: circle(150% at 50% 50%);
+        >ul{
+            >li{
+                animation-name: li;
+            }
+        }
+    }
+    >*{
+        position: absolute;
+        display: flex;
+        color: aliceblue;
+    }
+    >b{
+        transform: rotate(90deg);
+        font-size: 50px;
+        top: 10px; left: 30px;  
+    }
+    >ul{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        >li{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 25vh;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(245, 222, 179, 0.467);
+            list-style-type: none;
+            transform: translateX(-100%);
+            animation-duration: .5S;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            &:nth-of-type(1){animation-delay: .3s;}
+            &:nth-of-type(2){animation-delay: .6s;}
+            &:nth-of-type(3){animation-delay: .9s;}
+            &:nth-of-type(4){animation-delay: 1.2s;}
+            >a{
+                /* background-color: #fff; */
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-decoration: none;
+                color: inherit;
+                transition: .5s;
+                text-shadow: 0 0 10px black;
+                &:hover{
+                    scale: 1.4;
+                }
+                
+
+            }
+
+        }
+        
+    }
+}
+@keyframes li{
+    to{
+        transform: translateX(0);
+    }
+}
